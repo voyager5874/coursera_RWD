@@ -1,0 +1,82 @@
+/*img.large { 
+  width: 500px; 
+  height: 500px;} 
+img.medium { 
+  width: 250px; 
+  height: 250px;}
+img.small { 
+  width: 100px; 
+  height: 100px;}*/
+
+
+.avatar{
+	width:25%;
+	border-radius: 10px;
+	float:right;
+	position: relative;
+	top:10px;
+	right: 10px;
+}
+
+.abs-pos {
+	position: absolute;
+	
+}
+
+.task-detail-card{
+	min-width: 400px;
+	max-width: 500px;
+	min-height: 400px;
+
+
+}
+
+.top-offset190px{
+	top: 195px;
+}
+
+.top-offset160px{
+	top: 160px;
+}
+
+
+
+body{
+min-width: 380px;
+
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+.thumbnail{
+	
+
+box-shadow: 5px 5px 15px grey;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+
+figure.thumbnail{
+	
+width:270px;
+height: 225px;
+
+text-align: bottom;
+text-align: left;
+
+
+}
+
+
+.navbar-expanded{
+
+	margin-left: 30px;
+	
+
+}
