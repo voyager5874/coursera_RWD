@@ -27,8 +27,8 @@ img.small {
     min-height: 400px;
 }
 
-.top-offset190px {
-    top: 195px;
+.top-offset200px {
+    top: 200px;
 }
 
 .top-offset160px {
@@ -60,6 +60,16 @@ figure.thumbnail {
     margin-left: 30px;
 }
 
+.top-menu-btn{
+  margin-left: 30px;
+}
+
 h1, h2{
-	padding-bottom: 30px;
+  padding-bottom:30px;
+}
+
+
+.icon-bar{
+  display: inline-block;
+  margin: auto;
 }
