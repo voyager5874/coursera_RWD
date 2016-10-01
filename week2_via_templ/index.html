@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>to do list</title>
+    <link href="css/bootstrap_flatly.css" rel="stylesheet">
+    <!-- pulls in the main bootstrap content we need -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/templates.js"></script>
+
+</head>
+
+<body>
+    <nav class="nav navbar navbar-inverse">
+        <div class="container-fluid ">
+            <!-- start collapsed navbar-->
+            <div class="top-menu-btn center-block">
+                <button class="btn btn-block navbar-toggle" data-toggle="collapse" data-target="#main_navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- / collapsed navbar-->
+        <!-- start un-collapsed navbar-->
+        <div class="collapse navbar-collapse text-center" id="main_navbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- / un-collapsed navbar-->
+    <div class="container well text-center center-block">
+        <h1>Things you need to learn</h1>
+        <div class="row">
+            <div id="content">
+            </div>
+        </div>
+    </div>
+    <!-- container end-->
+
+    
+    <script id="quick_overview" type="text/x-handlebars-template">
+        {{#each tasks}}
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a href="{{reference}}">
+                <figure class="thumbnail">
+                    <img class="task_cover img-responsive" src="{{picture}}" alt="learn web cover" />
+                    <progress class="progress abs-pos top-offset200px" value="{{progress}}" max="100" style="width: 260px;"></progress>
+                    <figcaption class="abs-pos top-offset160px">
+                        <h4>{{caption}} <span class="check glyphicon glyphicon-ok" aria-hidden="true"></span></h4>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+</body>
+
+</html>

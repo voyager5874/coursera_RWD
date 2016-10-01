@@ -50,16 +50,13 @@ a:hover {
 }
 
 figure.thumbnail {
+    position: relative;
     width: 270px;
     height: 225px;
     text-align: bottom;
     text-align: left;
-
 }
 
-a figure.thumbnail:hover{
-  box-shadow: 2px 2px 15px 2px #33ffbb;
-}
 
 .navbar-expanded {
     margin-left: 30px;

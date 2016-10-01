@@ -1,0 +1,47 @@
+{
+    tasks: [{
+            caption: "Web",
+            picture: "images/web1.jpg",
+            progress: "99",
+            reference: "details.html#web",
+            description: "The Internet is a global system",
+            person: {
+                name: "frank",
+                photo: "images/avatar1.jpg",
+                department: "developers"
+            }
+        },
+
+        {
+            caption: "javascript",
+            picture: "images/js_logo.jpg",
+            progress: "30",
+            reference: "details.html#javascript",
+            description: "The Internet is a global system of interconnected computer networks that use the Internet",
+            person: {
+                name: "frank",
+                photo: "images/avatar1.jpg",
+                department: "developers"
+
+            }, 
+
+            learning_plan: [ {books : [{author:"Flanagan", title:"javascript"}, {author:"Freeman", title:"Design patterns"}] },
+            {  courses : [ {title: "responsive web design", type:"MOOC", reference:"#" }, {title: "responsive web design", type:"MOOC", reference:"#" } ]  }
+           
+            ] 
+
+
+
+        
+
+        }, 
+
+        {
+            name: "git",
+            picture: "images/git_logo.jpg",
+            progress: "15",
+            reference: "details.html#git"
+        }
+
+    ]
+}
